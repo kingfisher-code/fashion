@@ -14,13 +14,17 @@ const Footer = () => {
         <FaTiktok className="w-6 h-6" />
       </div>
       <div className="justify-self-center pb-2">
-        <button className="border px-9 py-1">Contact Us</button>
+        <button className="border px-9 py-1 font-sans">Contact Us</button>
       </div>
-      <div className="justify-self-center  ">
-        <button className="border px-5 py-1 ml-3">Hair Loyalty Card</button>
-        <button className="border px-4 py-1 ">Beauty Loyalty Card</button>
+      <div className=" grid justify-self-center gap-2 md:flex ">
+        <button className="border px-5 py-1 mr-1.5 font-sans">
+          Hair Loyalty Card
+        </button>
+        <button className="border px-4 py-1 ml-1.5 font-sans">
+          Beauty Loyalty Card
+        </button>
       </div>
-      <p className="justify-self-center pt-3 border-b ">
+      <p className="justify-self-center pt-3 border-b font-sans">
         @ 2024-2025 john codez
       </p>
     </div>

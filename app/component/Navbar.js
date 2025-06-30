@@ -26,7 +26,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`w-full  px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+      className={`w-full justify-self-center px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
         isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
       }`}
     >
@@ -34,21 +34,21 @@ const Navbar = () => {
         <div>
           <h2 className="font-bold text-2xl italic">Favy looks.</h2>
         </div>
-        <ul className="hidden text-gray-400 md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
-          <li className="hover:underline">
+        <ul className="hidden font-mono text-gray-400 justify-self-center md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+          <li className="hover:underline font-mono ">
             <a href="#top">About</a>
           </li>
-          <li className="hover:underline">
+          <li className="hover:underline font-mono ">
             <a href="#price list">Price list</a>
           </li>
-          <li className="hover:underline">
+          <li className="hover:underline font-mono ">
             <a href="#my work">My work</a>
           </li>
-          <li className="hover:underline">
+          <li className="hover:underline font-mono ">
             <a href="#contact"> Contact</a>
           </li>
         </ul>
-        <button className="border p-4 cursor-pointer hover:bg-gray-600 rounded-lg">
+        <button className="border p-4 cursor-pointer hover:bg-gray-600 rounded-lg font-mono ">
           Book now
         </button>
         <div>
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
       <ul
         ref={sideMenuRef}
-        className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 buttom-0 w-64 z-50 h-screen bg-gray-500 transition duration-500"
+        className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 buttom-0 w-64 z-50 h-screen bg-gray-500 transition duration-500 font-mono"
       >
         <div className="absolute right-6 top-6" onClick={closeMenu}>
           <IoMdClose className="w-5 h-5 cursor:pointer" />
