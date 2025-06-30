@@ -31,16 +31,18 @@ const Hero = () => {
           <h3 className="sm:text-sm md:text-xl"> BEAUTY</h3>
           <h3 className="sm:text-sm md:text-xl">AESTHETICS</h3>
         </div>
-        <div className=" pt-10 bottom-46 left-18 justify-self-center">
+        <div className=" pt-10 ">
           <motion.h1
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className=" text-xl font-mono"
+            className=" text-xl font-mono justify-self-center "
           >
-            SCIENTIFICALLY PROVEN AESTHETICS ...
+            SCIENTIFICALLY PROVEN AESTHETICS
           </motion.h1>
-          <hi className="font-cursive">Feeling yourself</hi>
+          <hi className="font-cursive  justify-self-center">
+            {/* Feeling yourself */}
+          </hi>
         </div>
         <div className="justify-center justify-self-center content-center pt-10 md:pt-30 ">
           <button className="border px-4  py-1 mr-2 cursor-pointer hover font-sans">
