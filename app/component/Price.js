@@ -12,7 +12,7 @@ const Price = () => {
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
-        className="md:pl-12"
+        className=" justify-self-center md:pl-12"
       >
         <Card
           title="Fringe Wig"
@@ -24,7 +24,7 @@ const Price = () => {
       <motion.div
         whileHover={{ scale: 1.05 }}
         transition={{ duration: 0.3 }}
-        className="md:pl-5"
+        className="justify-self-center md:pl-5"
       >
         <Card
           title="Silk Frontals"
@@ -33,7 +33,11 @@ const Price = () => {
           imageUrl="/wendy pic 2.jpg"
         />
       </motion.div>
-      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+        className="justify-self-center"
+      >
         <Card
           title="Pixie Curl"
           description="Our Pixie Curls Wig is made from premium synthetic fibers that mimic the texture and appearance of natural hair. The curls are carefully designed to maintain their shape and bounce, ensuring a consistently stylish look without the need for constant maintenance."
