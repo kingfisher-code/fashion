@@ -7,7 +7,7 @@ const Price = () => {
   return (
     <motion.div
       id="price"
-      className="grid items-center mt-10 juatify-self-center contents-center grid-cols-2 md:grid-cols-3 "
+      className="grid items-center mt-10 juatify-self-center contents-center grid-cols-1 md:grid-cols-3 "
     >
       <motion.div
         whileHover={{ scale: 1.05 }}

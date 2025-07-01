@@ -36,7 +36,7 @@ const Hero = () => {
             initial={{ y: -20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className=" text-xl font-mono justify-self-center "
+            className=" text-xl pl-12 font-mono justify-self-center "
           >
             SCIENTIFICALLY PROVEN AESTHETICS
           </motion.h1>
