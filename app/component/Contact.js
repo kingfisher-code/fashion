@@ -1,10 +1,21 @@
 "use client";
-
+// import { FC } from "react";
+// import { useForm } from "react-hook-form";
+// import { sendEmail } from "@/utils/send-email";
 import React from "react";
 import { motion } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
 
+// export type FormData={
+//     name:string;
+//     email:string;
+//     message:string;
+
 const Contact = () => {
+  //     const{register, handleSubmit}= useForm<FormData>();
+  //     function onSubmit(data: FormData){
+  //         sendEmail(data)
+  //     }
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,7 +53,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        // onSubmit={onSubmit}
+        // onSubmit={handleSubmit(onsubmit)}
         className="max-w-2xl mx-auto font-mono"
       >
         <div className="grid lg:grid-cols-2 sm:grid-cols-1  gap-6 mt-10 mb-8 font-mono">
@@ -52,7 +63,7 @@ const Contact = () => {
             transition={{ delay: 1.1, duration: 0.6 }}
             type="text"
             placeholder="Enter your name"
-            required
+            // {...register("name", { required: true })}
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-black font-mono"
           />
           <motion.input
@@ -61,7 +72,7 @@ const Contact = () => {
             transition={{ delay: 1.1, duration: 0.6 }}
             type="email"
             placeholder="Enter your email"
-            required
+            // {...register("email", { required: true })}
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white text-black font-mono"
           />
         </div>
@@ -72,6 +83,7 @@ const Contact = () => {
           rows="6"
           placeholder="Enter your message"
           required
+          // {...register("message", { required: true })}
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 text-black font-mono"
         ></motion.textarea>
         <motion.button

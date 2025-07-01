@@ -7,7 +7,7 @@ import Contact from "./component/Contact";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-h-screen">
       <Navbar />
       <Hero />
       <Price />
