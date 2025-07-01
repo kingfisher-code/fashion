@@ -7,7 +7,7 @@ import Contact from "./component/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className=" justify-self-center">
       <Navbar />
       <Hero />
       <Price />
