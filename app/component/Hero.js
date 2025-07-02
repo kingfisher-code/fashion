@@ -12,7 +12,7 @@ const Hero = () => {
       initial={{ y: -20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, delay: 0.3 }}
-      className=" grid grid-cols-1 md:flex gap-10 justify-self-end "
+      className=" grid  grid-cols-1 md:flex gap-10 justify-self-end "
     >
       {/* <div className="items-center z-40 mr-50  md:pt-20">
         <p className="pb-2">

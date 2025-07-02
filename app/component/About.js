@@ -1,16 +1,28 @@
+"use client";
+
 import React from "react";
+
 import Image from "next/image";
+import { motion } from "motion/react";
 const About = () => {
   return (
     <div id="about" className="justify-self-center">
-      <div className="justify-self-center md:justify-self-left p-5">
+      <div className=" p-5 justify-self-left ">
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="text-center text-5xl font-mono p-4 underline"
+        >
+          Get To Know About Me
+        </motion.h2>
         <Image
           src="/hair-style.jpg"
           alt=""
           width={600}
           height={400}
           //   layout="responsive"
-          className="rounded-xl"
+          className="rounded-xl md:justify-self-left"
         />
       </div>
       <div className="font-mono text-center">

@@ -5,6 +5,7 @@ import Footer from "./component/Footer";
 import Price from "./component/Price";
 import Contact from "./component/Contact";
 import About from "./component/About";
+import Work from "./component/Work";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Price />
-
+      <Work />
       <Contact />
       <Footer />
     </div>
