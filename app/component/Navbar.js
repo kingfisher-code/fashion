@@ -36,7 +36,10 @@ const Navbar = () => {
         </div>
         <ul className="hidden font-mono text-gray-400 justify-self-center md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
           <li className="hover:underline font-mono ">
-            <a href="#top">About</a>
+            <a href="#top">Home</a>
+          </li>
+          <li className="hover:underline font-mono ">
+            <a href="#about">About</a>
           </li>
           <li className="hover:underline font-mono ">
             <a href="#price">Price list</a>
@@ -67,6 +70,11 @@ const Navbar = () => {
 
         <li>
           <a href="#top" onClick={closeMenu}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" onClick={closeMenu}>
             About
           </a>
         </li>
